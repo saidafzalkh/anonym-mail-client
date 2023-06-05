@@ -1,0 +1,19 @@
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #212529;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #212529cc;
+}
+
+.accordion-button::after {
+  display: none !important;
+}
