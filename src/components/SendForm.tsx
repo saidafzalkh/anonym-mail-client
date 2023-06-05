@@ -26,7 +26,6 @@ const SendForm = (): ReactElement => {
     };
     setTitle("");
     setBody("");
-    setRecipient("");
     send(data);
   };
 
@@ -50,6 +49,7 @@ const SendForm = (): ReactElement => {
           placeholder="Title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
+          required
         />
       </Form.Group>
       <Form.Group>
@@ -60,6 +60,7 @@ const SendForm = (): ReactElement => {
           style={{ resize: "none" }}
           value={body}
           onChange={(e) => setBody(e.target.value)}
+          required
         />
       </Form.Group>
       <Button variant="dark" type="submit">
